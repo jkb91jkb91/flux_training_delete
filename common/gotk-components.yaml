@@ -1,0 +1,27 @@
+# common/gotk-components.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: flux-system
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: source-controller
+  namespace: flux-system
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: source-controller
+  template:
+    metadata:
+      labels:
+        app: source-controller
+    spec:
+      containers:
+      - name: source-controller
+        image: fluxcd/source-controller:latest
+        ports:
+        - containerPort: 8080
