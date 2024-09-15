@@ -2,12 +2,12 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta2
 kind: HelmRelease
 metadata:
   name: django-nginx-custom
-  namespace: staging
+  namespace: production
 spec:
   interval: 1m
-  chart:
+  chart:#GET KUSTOMIZATION
     spec:
-      chart: ../../HelmCharts/django_nginx_prod
+      chart: ../../HelmChartsProduction/django_nginx_prod
       sourceRef:
         kind: GitRepository
         name: flux-system
