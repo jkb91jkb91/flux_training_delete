@@ -4,5 +4,5 @@ metadata:
   name: production
   namespace: flux-system
 resources:
-- ../../common/gotk-components.yaml
-- ../../common/gotk-sync.yaml
+- ../../../common/gotk-components.yaml
+- ../../../common/gotk-sync.yaml
