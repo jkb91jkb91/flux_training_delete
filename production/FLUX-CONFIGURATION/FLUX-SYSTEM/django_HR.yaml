@@ -5,7 +5,7 @@ metadata:
   namespace: production
 spec:
   interval: 1m
-  chart:#GET KUSTOMIZATION
+  chart:
     spec:
       chart: ../../HelmChartsProduction/django_nginx_prod
       sourceRef:
