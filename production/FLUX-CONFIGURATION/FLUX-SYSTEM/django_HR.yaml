@@ -7,7 +7,7 @@ spec:
   interval: 1m
   chart:
     spec:
-      chart: ../HelmChartsProduction/django_nginx_prod
+      chart: ../../HelmChartsProduction/django_nginx_prod
       sourceRef:
         kind: GitRepository
         name: flux-system
