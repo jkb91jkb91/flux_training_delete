@@ -1,7 +1,7 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta2
 kind: HelmRelease
 metadata:
-  name: django-nginx-custom
+  name: just-django
   namespace: production
 spec:
   interval: 1m
